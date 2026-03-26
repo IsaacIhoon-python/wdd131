@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Isaac Ihoon | Country Page</title>
+
+  <meta name="description" content="Country page project for WDD 131">
+  <meta name="author" content="Isaac Ihoon">
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/scripts.js" defer></script>
+</head>
+
+<body>
+
+<header>
+  <h1>Nigeria 🇳🇬</h1>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <picture>
+      <source srcset="images/nigeria-small.webp" media="(max-width: 600px)">
+      <source srcset="images/nigeria-large.webp" media="(min-width: 601px)">
+      <img src="images/nigeria-large.webp" alt="Beautiful landscape of Nigeria">
+    </picture>
+  </div>
+
+  
+
+  <!-- DATA SECTION -->
+  <section class="data">
+    <h2>Data</h2>
+    <p>Area: 923,768 sq km</p>
+    <p>Population: 200 million+</p>
+    <p>Capital: Abuja</p>
+    <p>Languages: English, Hausa, Yoruba, Igbo</p>
+  </section>
+
+  <section class="description">
+  <h2>About Nigeria</h2>
+  <p>
+    Nigeria is a country located in West Africa. It is the most populous nation
+    in Africa and known for its rich culture, diverse ethnic groups, and growing
+    technology ecosystem.
+  </p>
+</section>
+
+  <!-- WEATHER SECTION -->
+  <section class="weather">
+    <h2>Weather</h2>
+
+    <!-- SVG (mobile only) -->
+    <img src="images/weather.svg" alt="weather icon" class="weather-icon">
+
+    <p>Temperature: <span id="temp">28</span> °C</p>
+    <p>Wind Speed: <span id="speed">10</span> km/h</p>
+    <p>Wind Chill: <span id="windchill"></span></p>
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Isaac Ihoon</p>
+  <p id="lastModified"></p>
+</footer>
+
+</body>
+</html>
