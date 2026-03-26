@@ -6,6 +6,8 @@ document.querySelector("#lastModified").textContent =
 // Weather values
 const temp = parseFloat(document.querySelector("#temp").textContent);
 const speed = parseFloat(document.querySelector("#speed").textContent);
+const condition = document.querySelector("#condition");
+condition.textContent = "Rainy";
 
 // Wind Chill (1 line)
 function calculateWindChill(t, s) {
