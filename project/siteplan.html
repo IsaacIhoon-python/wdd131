@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Site Plan | Isaac Ihoon Tech Portfolio</title>
+
+  <meta name="description" content="Website planning document for Isaac Ihoon Tech Portfolio project.">
+  <meta name="author" content="Isaac Ihoon">
+
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  
+  <link rel="stylesheet" href="styles/siteplan.css">
+</head>
+
+<body>
+
+<header>
+
+    <img src="images/logo.jpeg" alt="Isaac Ihoon Tech Portfolio Logo" class="logo">
+  <h1>Isaac Ihoon Tech Portfolio</h1>
+</header>
+
+<main>
+
+  
+  <section>
+    <h2>Site Name</h2>
+    <p><strong>Isaac Ihoon Tech Portfolio</strong></p>
+    <p>This name clearly identifies the owner and reflects a professional portfolio focused on web development and AI automation.</p>
+  </section>
+
+  
+  <section>
+    <h2>Site Purpose</h2>
+    <p>This website showcases my skills in web development, programming, and AI automation. It highlights projects, technical abilities, and provides contact opportunities for clients and employers.</p>
+  </section>
+
+  
+  <section>
+    <h2>Scenarios</h2>
+    <ul>
+      <li>What projects has Isaac built?</li>
+      <li>What technologies does Isaac specialize in?</li>
+      <li>How can I contact Isaac for work?</li>
+    </ul>
+  </section>
+
+  
+  <section>
+    <h2>Color Scheme</h2>
+    <ul>
+      <li><strong>#2a5674</strong> – Header, navigation, footer</li>
+      <li><strong>#ffffff</strong> – Background</li>
+      <li><strong>#f4f4f4</strong> – Section cards</li>
+    </ul>
+  </section>
+
+  
+  <section>
+    <h2>Typography</h2>
+    <p><strong>Roboto</strong> – Used for all headings and body text.</p>
+  </section>
+
+  
+  <section>
+    <h2>Wireframes</h2>
+
+    <h3>Mobile View</h3>
+    <img src="images/wireframe-mobile.jpeg" alt="Mobile wireframe layout">
+
+    <h3>Desktop view</h3>
+    <img src="images/wireframe-desktop.jpeg" alt="Desktop Wireframe layout">
+  </section>
+
+</main>
+
+<footer>
+  <p>© <span id="year"></span> Isaac Ihoon</p>
+  <p id="lastModified"></p>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+  document.getElementById("lastModified").textContent =
+    "Last Updated: " + document.lastModified;
+</script>
+
+</body>
+</html>

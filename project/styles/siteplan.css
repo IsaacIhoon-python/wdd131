@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #2a5674;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Logo */
+.logo {
+    width: 80px;
+    display: block;
+    margin: 0 auto 10px;
+}
+
+/* Main Layout */
+main {
+  max-width: 800px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
+
+/* Sections */
+section {
+  background-color: #f4f4f4;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+/* Headings */
+h2 {
+  color: #2a5674;
+  margin-bottom: 0.5rem;
+}
+
+h3 {
+  margin-top: 1rem;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+}
+
+/* Image Styling For Wireframe */
+section img {
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: 10px auto;
+  border: 1px solid #ccc;
+}
+
+/* Footer */
+footer {
+  background-color: #2a5674;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
