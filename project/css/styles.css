@@ -36,9 +36,6 @@ nav a:hover {
   text-decoration: underline;
 }
 
-/*#menuBtn {
-  display: block;
-}*/
 #menuBtn {
   display: none;
 }
@@ -56,11 +53,14 @@ nav a:hover {
   padding: 15px;
   border-radius: 8px;
 }
+.sidebar img.profile {
+  display: block;
+}
 
 
 .main-content {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 0 auto 20px auto;
   background: #f4f4f4;
   padding: 20px;
   border-radius: 10px;
@@ -81,7 +81,8 @@ nav a:hover {
 .profile {
   width: 120px;
   border-radius: 50%;
-  margin-top: 15%;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 
@@ -102,16 +103,19 @@ nav a:hover {
 }
 
 .projects-grid {
-  display: flex;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 100px;
 }
 
 .project-card {
   background: white;
-  padding: 30px;
-  border-radius: 8px;
+  padding: 18px;
+  border-radius: 10px;
   transition:  0.3s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .project-card:hover {
@@ -126,7 +130,7 @@ nav a:hover {
   object-fit: cover;
   border-radius: 8px;
   margin-bottom: 10px;
-  transition: transform 0,3s ease;
+  transition: transform 0.3s ease;
 }
 
 .skills {
@@ -180,8 +184,6 @@ footer a {
   text-decoration: underline;
 }
 
-
-
 @media (max-width: 768px) {
   .container {
     grid-template-columns: 1fr;
@@ -196,8 +198,6 @@ footer a {
     display: flex;
   }
 }
-
-
 
 /* Inputs */
 input, textarea {
@@ -237,7 +237,7 @@ input:focus, textarea:focus {
 .project-links {
   display: flex;
   gap: 10px;
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 /* LIVE BUTTON */
@@ -261,13 +261,35 @@ input:focus, textarea:focus {
 .logo-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
 
 .logo {
-  width: 80px;
+  width: 50px;
   height: auto;
+  object-fit: contain;
+  border-radius: 4px;
 }
 
+/* TYPOGRAPHY IMPROVEMENT */
+body {
+  line-height: 1.6;
+}
 
+p {
+  margin-bottom: 12px;
+}
+
+h2 {
+  letter-spacing: 0.5px;
+}
+
+h3 {
+  font-weight: 600;
+}
+.page-center {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}

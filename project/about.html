@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About - Isaac Ihoon</title>
-<link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Isaac Ihoon</title>
+
+  <meta name="description" content="Learn more about Isaac Ihoon, a web developer and AI automation engineer.">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
 
 <header>
   <div class="logo-container">
-    <img src="images/logo.jpeg" alt="Isaac Ihoon Logo" class="logo">
+    <img src="images/logo.jpeg" alt="Isaac Ihoon Logo" class="logo" loading="lazy">
     <h1>Isaac Ihoon</h1>
   </div>
 
   <nav>
-    <button id="menuBtn">☰</button>
+    <button id="menuBtn" aria-label="Toggle navigation menu">☰</button>
     <ul id="navMenu">
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About</a></li>
@@ -26,7 +29,7 @@
   </nav>
 </header>
 
-<main class="container">
+<main class="page-center">
 
   <h2>About Me</h2>
 
@@ -66,6 +69,8 @@
 </main>
 
 <footer>
+  <p>© <span id="year"></span> Isaac Ihoon.</p>
+  <p id="lastModified"></p>
   <a href="references.html">References</a>
 </footer>
 

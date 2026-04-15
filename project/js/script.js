@@ -1,4 +1,4 @@
-// YEAR + LAST MODIFIED 
+// YEAR + LAST MODIFIED //
 const yearEl = document.getElementById("year");
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
@@ -9,7 +9,7 @@ if (lastModEl) {
   lastModEl.textContent = "Last Updated: " + document.lastModified;
 }
 
-// NAV MENU
+// NAV MENU //
 const menuBtn = document.getElementById("menuBtn");
 const navMenu = document.getElementById("navMenu");
 
@@ -17,7 +17,7 @@ menuBtn?.addEventListener("click", () => {
   navMenu.classList.toggle("show");
 });
 
-// PROJECTS (FIXED)
+// PROJECTS //
 const projects = [
   {
     name: "Expedition Site",
@@ -42,7 +42,7 @@ const projects = [
   }
 ];
 
-// DISPLAY PROJECTS
+// DISPLAY PROJECTS //
 function displayProjects(list) {
   const container = document.getElementById("projectContainer");
   if (!container) return;
@@ -51,8 +51,8 @@ function displayProjects(list) {
 
   list.forEach(p => {
     container.innerHTML += `
-      <div class="project-card">
-        <img src="${p.image}" alt="${p.name}" loading="lazy">
+      <article class="project-card">
+        <img src="${p.image}" loading="lazy" alt="${p.name}">
         <h3>${p.name}</h3>
         <p>${p.category}</p>
 
@@ -60,12 +60,12 @@ function displayProjects(list) {
           <a href="${p.live}" target="_blank" class="btn live-btn">Live Demo</a>
           <a href="${p.github}" target="_blank" class="btn github-btn">Github</a>
         </div>
-      </div>
+      </article>
     `;
   });
 }
 
-// FILTER
+// FILTER //
 function filterProjects(category) {
   localStorage.setItem("category", category);
 
@@ -76,7 +76,7 @@ function filterProjects(category) {
   }
 }
 
-// LOAD FILTER
+// LOAD FILTER //
 const saved = localStorage.getItem("category");
 saved ? filterProjects(saved) : displayProjects(projects);
 
@@ -101,7 +101,7 @@ if (form) {
     status.textContent = "Message sent successfully!";
     status.style.color = "green";
 
-    // Auto clear after 3 seconds
+    // Auto clear after 3 seconds //
     setTimeout(() => {
       status.textContent = "";
     }, 3000);
